@@ -1,0 +1,23 @@
+// контакты
+.contacts__map {
+    filter: grayscale(100%);
+}
+
+.contacts__info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.contacts__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 120%;
+    margin-bottom: 34px;
+}
+
+.contacts__content {
+    list-style: none;
+    font-size: 24px;
+    line-height: 130%;
+}

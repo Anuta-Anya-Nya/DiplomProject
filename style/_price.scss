@@ -1,0 +1,47 @@
+//  страница цен 
+.price__box {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.price__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 134px;
+}
+
+.price__item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.price__img {
+    display: block;
+}
+
+.price-table {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 130%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bigger-row {
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.price__value {
+    text-align: right;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.smaller-row {
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 1px solid $color-text;
+    padding-bottom: 10px;
+}

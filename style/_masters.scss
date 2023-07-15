@@ -1,0 +1,47 @@
+// страница мастеров
+.pages-margin {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.masters__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.master__item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.master__item:hover .master__name {
+    color: $color-hover;
+}
+
+.master__name::before {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 477px;
+    border: 1px solid $color-hover;
+    position: absolute;
+    top: -16px;
+    left: 16px;
+    z-index: -10;
+}
+
+.master__name {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 130%;
+    margin-top: 30px;
+}
+
+.master__about {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    margin-top: 10px;
+}

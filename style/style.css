@@ -7,33 +7,33 @@ body {
   font-family: "Cormorant Garamond", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #ffffff;
+  color: #CDAA7D;
   background-color: #0a1111;
 }
 
 .container {
-  max-width: 1296px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
-.header-index {
+.background-image {
   min-height: 100vh;
-  background: url(img/header-bg.png) no-repeat center center;
+  background: url(../img/header-bg.png) no-repeat center center;
   background-size: cover;
-  margin-bottom: 120px;
 }
 
 .header-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffffff;
   padding: 30px;
+  box-sizing: border-box;
 }
 
 .menu-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #CDAA7D;
   font-weight: 600;
   font-size: 18px;
   line-height: 23px;
@@ -46,11 +46,11 @@ body {
 }
 
 .menu-link:hover {
-  color: #CDAA7D;
+  color: #ffffff;
 }
 
 .menu-border:hover.menu-link {
-  border-bottom: 1px solid #CDAA7D;
+  border-bottom: 1px solid #ffffff;
 }
 
 .header__title {
@@ -64,6 +64,7 @@ body {
 
 .quote {
   margin-bottom: 95px;
+  margin-top: 120px;
 }
 
 .quote__box {
@@ -102,11 +103,12 @@ body {
   display: block;
   width: 396px;
   height: 300px;
-  border: 1px solid #CDAA7D;
+  border: 1px solid transparent;
   position: absolute;
-  top: -20px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
   z-index: -10;
+  transition: all 0.3s;
 }
 
 .services__title {
@@ -117,7 +119,12 @@ body {
 }
 
 .services__item:hover .services__title {
-  color: #CDAA7D;
+  color: #ffffff;
+}
+
+.services__item:hover .services__title::before {
+  border: 1px solid #ffffff;
+  transform: translate(20px, -20px);
 }
 
 .materials-logo {
@@ -157,8 +164,8 @@ body {
 }
 
 .filter-item:hover {
-  color: #CDAA7D;
-  border-bottom: 1px solid #CDAA7D;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .works__box {
@@ -175,6 +182,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 5% 10px;
+  box-sizing: border-box;
 }
 
 .footer-logo {
@@ -183,13 +191,13 @@ body {
 }
 
 .foot-logo {
-  color: #ffffff;
+  color: #CDAA7D;
   font-size: 65px;
   line-height: 65px;
 }
 
 .foot-logo:hover {
-  color: #CDAA7D;
+  color: #ffffff;
 }
 
 .footer__title {
@@ -218,11 +226,11 @@ body {
 .footer-icon {
   font-size: 36px;
   line-height: 36px;
-  color: #ffffff;
+  color: #CDAA7D;
 }
 
 .footer-icon:hover {
-  color: #CDAA7D;
+  color: #ffffff;
 }
 
 .footer-copy {
@@ -251,7 +259,7 @@ body {
 }
 
 .master__item:hover .master__name {
-  color: #CDAA7D;
+  color: #ffffff;
 }
 
 .master__name::before {
@@ -259,7 +267,7 @@ body {
   display: block;
   width: 400px;
   height: 477px;
-  border: 1px solid #CDAA7D;
+  border: 1px solid #ffffff;
   position: absolute;
   top: -16px;
   left: 16px;
@@ -323,13 +331,13 @@ body {
 .smaller-row {
   font-weight: 400;
   font-size: 18px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #CDAA7D;
   padding-bottom: 10px;
 }
 
 .action-banner-1 {
   min-height: 60vh;
-  background: url(img/actions1.jpg) no-repeat center center;
+  background: url(../img/actions1.jpg) no-repeat center center;
   background-size: cover;
   margin-bottom: 100px;
   font-size: 70px;
@@ -340,13 +348,17 @@ body {
 
 .action-banner-2 {
   min-height: 60vh;
-  background: url(img/actions2.jpg) no-repeat center center;
+  background: url(../img/actions2.jpg) no-repeat center center;
   background-size: cover;
   margin-bottom: 100px;
   font-size: 70px;
   box-sizing: border-box;
   padding-top: 220px;
   padding-left: 5%;
+}
+
+.contacts__map {
+  filter: grayscale(100%);
 }
 
 .contacts__info {
@@ -366,4 +378,52 @@ body {
   list-style: none;
   font-size: 24px;
   line-height: 130%;
+}
+
+.reg__box {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.reg__input {
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 0 20px 0 40px;
+  box-sizing: border-box;
+  border: none;
+}
+.reg__submit {
+  height: 40px;
+  background-color: #CDAA7D;
+  border-radius: 10px;
+  color: #ffffff;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.reg__submit:hover {
+  background-color: #ffffff;
+  color: #CDAA7D;
+  border: 1px solid #CDAA7D;
+}
+.reg__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.reg__buttons a {
+  height: 40px;
+  background-color: #CDAA7D;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.reg__buttons a:hover {
+  background-color: #ffffff;
+  color: #CDAA7D;
+  border: 1px solid #CDAA7D;
 }/*# sourceMappingURL=style.css.map */

@@ -38,6 +38,7 @@ body {
     font-size: 18px;
     line-height: 23px;
     border: 1px solid transparent;
+    transition: all 0.3s;
 }
 
 .head-icon {
@@ -116,6 +117,7 @@ body {
     line-height: 120%;
     margin-top: 30px;
     font-weight: 400;
+    transition: all 0.3s;
 }
 
 .services__item:hover .services__title {
@@ -161,6 +163,7 @@ body {
 
 .filter-item {
     border-bottom: 1px solid transparent;
+    transition: all 0.3s;
 }
 
 .filter-item:hover {
@@ -176,12 +179,11 @@ body {
 }
 
 .footer-box {
-    border-bottom: 1px solid $color-border;
     border-top: 1px solid $color-border;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 5% 10px;
+    padding: 20px 10px;
     box-sizing: border-box;
 }
 
@@ -194,6 +196,7 @@ body {
     color: $color-text;
     font-size: 65px;
     line-height: 65px;
+    transition: all 0.3s;
 }
 
 .foot-logo:hover {
@@ -203,8 +206,8 @@ body {
 .footer__title {
     font-weight: 700;
     font-size: 24px;
-    line-height: 120%;
-    margin-bottom: 25px;
+    line-height: normal;
+    margin-bottom: 30px;
 }
 
 .footer__list {
@@ -213,8 +216,8 @@ body {
 
 .footer__list>li {
     font-size: 18px;
-    line-height: 130%;
-    margin-bottom: 15px;
+    line-height: normal;
+    margin-bottom: 18px;
 }
 
 .footer-soc {
@@ -234,9 +237,10 @@ body {
 }
 
 .footer-copy {
+    border-top: 1px solid $color-border;
     font-weight: 700;
     font-size: 18px;
-    line-height: 140%;
+    line-height: normal;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }

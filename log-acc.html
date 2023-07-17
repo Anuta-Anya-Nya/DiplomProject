@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style/style.css" />
-    <title>Регистрация</title>
+    <title>Вход в личный кабинет</title>
   </head>
   <body>
     <div class="background-image background-flex">
@@ -42,63 +42,17 @@
         </nav>
       </header>
 
-      <main class="reg">
+      <main class="log-acc">
         <div class="container">
           <form class="form-box" action="#">
-            <div class="input-box">
-              <i class="fa-solid fa-user input-box__icon"></i>
-              <input
-                class="input-field"
-                type="text"
-                name="reg-name"
-                id="reg-name"
-                placeholder="Имя"
-                required
-              />
-            </div>
-            <div class="input-box">
-              <i class="fa-solid fa-user input-box__icon"></i>
-              <input
-                class="input-field"
-                type="text"
-                name="reg-surname"
-                id="reg-surname"
-                placeholder="Фамилия"
-                required
-              />
-            </div>
-            <div class="input-box">
-              <i class="fa-solid fa-phone input-box__icon"></i>
-              <input
-                class="input-field"
-                type="phone"
-                name="reg-phone"
-                id="reg-phone"
-                placeholder="Телефон"
-                required
-              />
-            </div>
-            <div class="input-box">
-              <i class="fa-solid fa-cake-candles input-box__icon"></i>
-              <input
-                class="input-field"
-                type="text"
-                name="reg-date"
-                id="reg-date"
-                placeholder="Дата рождения"
-                onfocus="(this.type='date')"
-                onblur="(this.type='text')"
-              />
-            </div>
             <div class="input-box">
               <i class="fa-solid fa-envelope input-box__icon"></i>
               <input
                 class="input-field"
                 type="email"
-                name="reg-mail"
-                id="reg-mail"
-                placeholder="Почтовый ящик"
-                required
+                name="email"
+                id="email"
+                placeholder="Адрес почты"
               />
             </div>
             <div class="input-box">
@@ -106,16 +60,25 @@
               <input
                 class="input-field"
                 type="password"
-                name="reg-pass"
-                id="reg-pass"
+                name="pass"
+                id="pass"
                 placeholder="Пароль"
-                required
               />
             </div>
 
-            <button class="button-simple" type="submit">
-              Зарегистрироваться
-            </button>
+            <button class="button-simple" type="submit">Войти</button>
+            <div class="log-acc__buttons">
+              <a
+                class="button-simple log-acc__buttons_link"
+                href="registration.html"
+                >Зарегистрироваться</a
+              >
+              <a
+                class="button-simple log-acc__buttons_link"
+                href="forgetPas.html"
+                >Забыли пароль</a
+              >
+            </div>
           </form>
         </div>
       </main>

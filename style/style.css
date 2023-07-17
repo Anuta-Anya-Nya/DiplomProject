@@ -38,6 +38,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   border: 1px solid transparent;
+  transition: all 0.3s;
 }
 
 .head-icon {
@@ -116,6 +117,7 @@ body {
   line-height: 120%;
   margin-top: 30px;
   font-weight: 400;
+  transition: all 0.3s;
 }
 
 .services__item:hover .services__title {
@@ -161,6 +163,7 @@ body {
 
 .filter-item {
   border-bottom: 1px solid transparent;
+  transition: all 0.3s;
 }
 
 .filter-item:hover {
@@ -176,12 +179,11 @@ body {
 }
 
 .footer-box {
-  border-bottom: 1px solid #ffffff;
   border-top: 1px solid #ffffff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5% 10px;
+  padding: 20px 10px;
   box-sizing: border-box;
 }
 
@@ -194,6 +196,7 @@ body {
   color: #CDAA7D;
   font-size: 65px;
   line-height: 65px;
+  transition: all 0.3s;
 }
 
 .foot-logo:hover {
@@ -203,8 +206,8 @@ body {
 .footer__title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 120%;
-  margin-bottom: 25px;
+  line-height: normal;
+  margin-bottom: 30px;
 }
 
 .footer__list {
@@ -213,8 +216,8 @@ body {
 
 .footer__list > li {
   font-size: 18px;
-  line-height: 130%;
-  margin-bottom: 15px;
+  line-height: normal;
+  margin-bottom: 18px;
 }
 
 .footer-soc {
@@ -234,11 +237,12 @@ body {
 }
 
 .footer-copy {
+  border-top: 1px solid #ffffff;
   font-weight: 700;
   font-size: 18px;
-  line-height: 140%;
+  line-height: normal;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
 }
 
 .pages-margin {
@@ -380,50 +384,112 @@ body {
   line-height: 130%;
 }
 
-.reg__box {
+.background-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-box {
   width: 50%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.reg__input {
-  height: 40px;
+
+.input-field {
+  height: 60px;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  padding: 0 20px 0 40px;
+  padding: 15px 20px 15px 60px;
   box-sizing: border-box;
   border: none;
+  color: #ffffff;
+  font-family: "Cormorant Garamond";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
 }
-.reg__submit {
-  height: 40px;
+
+.button-simple {
+  height: 60px;
   background-color: #CDAA7D;
   border-radius: 10px;
-  color: #ffffff;
+  color: #0a1111;
   border: 1px solid transparent;
   cursor: pointer;
+  font-family: "Cormorant Garamond";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  box-sizing: border-box;
+  transition: all 0.3s;
 }
-.reg__submit:hover {
+.button-simple:hover {
   background-color: #ffffff;
-  color: #CDAA7D;
   border: 1px solid #CDAA7D;
 }
-.reg__buttons {
+
+.input-box {
+  position: relative;
+}
+.input-box__icon {
+  position: absolute;
+  font-size: 24px;
+  top: 18px;
+  left: 20px;
+}
+
+.log-acc__buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
-.reg__buttons a {
-  height: 40px;
-  background-color: #CDAA7D;
-  border-radius: 10px;
-  color: #ffffff;
+.log-acc__buttons_link {
   text-decoration: none;
-  text-align: center;
-  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
 }
-.reg__buttons a:hover {
+.log-acc__buttons_link:hover {
   background-color: #ffffff;
-  color: #CDAA7D;
+  border: 1px solid #CDAA7D;
+}
+
+.forgetPas__title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.acc-title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.acc-box {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.account__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.account__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.account__link:hover {
+  background-color: #ffffff;
   border: 1px solid #CDAA7D;
 }/*# sourceMappingURL=style.css.map */

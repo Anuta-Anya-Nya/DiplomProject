@@ -1,0 +1,32 @@
+.acc-title {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.acc-box {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.account {
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $color-hover;
+            // color: $color-text;
+            border: 1px solid $color-text;
+        }
+    }
+}
